@@ -1,15 +1,15 @@
 package Controleur;
 import java.sql.*;
 
-public class Jdvc {
+public class Jdbc {
 
-    void lectureArticle(){
-        String sql = "SELECT article FROM Shopping";
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eceshopping", "root", "");
+    void lectureEmployé(){
+        String sql = "SELECT* from employé";
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eceshopping", "root", "abcdef");
              Statement stmt  = conn.createStatement();
              ResultSet rs    = stmt.executeQuery(sql)){
             while (rs.next()) {
-                System.out.println(rs.getString("article"));
+                System.out.println(rs.getString("email"));
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
