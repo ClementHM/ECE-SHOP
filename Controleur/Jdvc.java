@@ -1,14 +1,11 @@
 package Controleur;
 import java.sql.*;
 
-public class Controleur {
-    public static void main(String[] args) {
-        Controleur C1= new Controleur();
-        C1.lectureArticle();
-    }
+public class Jdvc {
+
     void lectureArticle(){
         String sql = "SELECT article FROM Shopping";
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shopping", "root", "");
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eceshopping", "root", "");
              Statement stmt  = conn.createStatement();
              ResultSet rs    = stmt.executeQuery(sql)){
             while (rs.next()) {
