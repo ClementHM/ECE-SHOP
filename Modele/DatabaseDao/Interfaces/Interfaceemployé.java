@@ -1,4 +1,4 @@
-package Modele.DatabaseDao;
+package Modele.DatabaseDao.Interfaces;
 
 
 import Modele.Table.Employé;

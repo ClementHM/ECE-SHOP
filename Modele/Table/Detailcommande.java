@@ -1,6 +1,6 @@
 package Modele.Table;
 
-public class Detailcommandes {
+public class Detailcommande {
     private int id;
     private int idcommande;
     private int idarticle;

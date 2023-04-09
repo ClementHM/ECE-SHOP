@@ -2,7 +2,7 @@ package Modele.Table;
 
 import java.sql.Date;
 
-public class Commandes {
+public class Commande {
     private int id;
     private java.sql.Date date;
     private int idclient;
@@ -29,7 +29,7 @@ public class Commandes {
         return idclient;
     }
 
-    public void setId_client(int idclient) {
+    public void setIdclient(int idclient) {
         this.idclient = idclient;
     }
 

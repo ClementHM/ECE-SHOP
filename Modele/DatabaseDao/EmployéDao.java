@@ -1,13 +1,13 @@
 package Modele.DatabaseDao;
 
-import Modele.Table.Article;
+import Modele.DatabaseDao.Interfaces.Interfaceemployé;
 import Modele.Table.Employé;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployéDao implements Interfaceemployé{
+public class EmployéDao implements Interfaceemployé {
     private DaoFactory daoFactory;
     public EmployéDao(DaoFactory daoFactory) {
         this.daoFactory = daoFactory;

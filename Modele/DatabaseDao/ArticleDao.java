@@ -1,5 +1,6 @@
 package Modele.DatabaseDao;
 
+import Modele.DatabaseDao.Interfaces.InterfaceArticle;
 import Modele.Table.Article;
 
 import java.sql.*;
@@ -90,18 +91,6 @@ public class ArticleDao implements InterfaceArticle {
         return listearticles;
 
     }
-      /*void lectureEmployé() {
-        String sql = "SELECT* from employé";
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping", "root", "abcdef");
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
-            while (rs.next()) {
-                System.out.println(rs.getString("email"));
-            }
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }*/
 
     }
 
