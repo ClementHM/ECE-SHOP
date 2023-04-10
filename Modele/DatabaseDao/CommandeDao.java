@@ -64,25 +64,25 @@ public class CommandeDao implements InterfaceCommande {
     }
 
     @Override
-    public void Ajout() {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        Commande commande= new Commande();
-
+    public void saveCommande(java.sql.Timestamp timestamp, int idclient, int total, int payé) {
         try {
-            connection = daoFactory.getConnection();
-            preparedStatement = connection.prepareStatement("INSERT INTO commande (id, date, id_client, total, payé) VALUES (?,?, ?, ?, ?)");
-            preparedStatement.setInt(1,13);
-            preparedStatement.setDate(2, Date.valueOf("2023-05-02"));
-            preparedStatement.setInt(3, 5);
-            preparedStatement.setInt(4, 25);
-            preparedStatement.setInt(5, 1);
-
+            Connection connection = daoFactory.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO commande (date, id_client, total, payé) VALUES (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setTimestamp(1, timestamp);
+            preparedStatement.setInt(2, idclient);
+            preparedStatement.setInt(3, total);
+            preparedStatement.setInt(4, payé);
             preparedStatement.executeUpdate();
+            ResultSet rs = preparedStatement.getGeneratedKeys();
+            if (rs.next()) {
+                int id = rs.getInt(1);
+                System.out.println("Le nouvel ID est : " + id);
+
+                System.out.println("Commande ajouté à la base de données");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
 }
 
