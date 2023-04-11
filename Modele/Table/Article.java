@@ -7,11 +7,13 @@ public class Article {
 
         private String description;
 
-        private float prixunitaire;
-        private float prixgroupé ;
-        private float quantitégroupé;
+        private float prix;
+
+        private float quantité;
 
         private String catégorie;
+
+        private int stock;
 
 
 
@@ -23,7 +25,7 @@ public class Article {
         this.catégorie = catégorie;
     }
 
-    private int stock;
+
 
     public int getStock() {
         return stock;
@@ -57,34 +59,25 @@ public class Article {
         this.description = description;
     }
 
-    public float getPrixunitaire() {
-        return prixunitaire;
+    public float getPrix() {
+        return prix;
     }
 
-    public void setPrixunitaire(float prixunitaire) {
-        this.prixunitaire = prixunitaire;
+    public void setPrix(float prix) {
+        this.prix = prix;
     }
 
-    public float getPrixgroupé() {
-        return prixgroupé;
+    public float getQuantité() {
+        return quantité;
     }
 
-    public void setPrixgroupé(float prixgroupé) {
-        this.prixgroupé = prixgroupé;
+    public void setQuantité(float quantité) {
+        this.quantité = quantité;
     }
-
-    public float getQuantitégroupé() {
-        return quantitégroupé;
-    }
-
-    public void setQuantitégroupé(float quantitégroupé) {
-        this.quantitégroupé = quantitégroupé;
-    }
-
 
     public String toString() {
             return "Article{" + "id: " + id + " nom: " + nom + " description: "+ description+
-                    " prix unitaire: " + prixunitaire+ " prix groupé: "+ prixgroupé +" quantité groupé: "+ quantitégroupé+ '\'' + '}';
+                    " prix unitaire: " + prix+  " quantité groupé: "+ quantité+ "categorie:"+ catégorie+"stock:"+stock+ '\'' + '}';
         }
     }
 
