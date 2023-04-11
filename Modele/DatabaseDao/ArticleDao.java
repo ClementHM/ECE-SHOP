@@ -30,9 +30,9 @@ public class ArticleDao implements InterfaceArticle {
                 article.setId(resultSet.getInt("id"));
                 article.setNom(resultSet.getString("nom"));
                 article.setDescription(resultSet.getString("description"));
-                article.setPrixunitaire(resultSet.getFloat("prix_unitaire"));
-                article.setPrixgroupé(resultSet.getFloat("prix_groupé"));
-                article.setQuantitégroupé(resultSet.getFloat("quantité_groupé"));
+                article.setPrix(resultSet.getFloat("prix_unitaire"));
+                //article.setPrix(resultSet.getFloat("prix_groupé"));
+                article.setQuantité(resultSet.getFloat("quantité_groupé"));
 
             }
             System.out.println(article);
@@ -68,9 +68,9 @@ public class ArticleDao implements InterfaceArticle {
                 article.setId(id);
                 article.setNom(nom);
                 article.setDescription(description);
-                article.setPrixunitaire(prixunitaire);
-                article.setPrixgroupé(prixgroupé);
-                article.setQuantitégroupé(quantitégroupé);
+                article.setPrix(prixunitaire);
+               // article.setPrix(prixgroupé);
+                article.setQuantité(quantitégroupé);
 
                 listearticles.add(article);
 
