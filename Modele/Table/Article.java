@@ -11,8 +11,29 @@ public class Article {
         private float prixgroupé ;
         private float quantitégroupé;
 
+        private String catégorie;
 
-        public int getId() {
+
+
+    public String getCatégorie() {
+        return catégorie;
+    }
+
+    public void setCatégorie(String catégorie) {
+        this.catégorie = catégorie;
+    }
+
+    private int stock;
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public int getId() {
             return id;
         }
 
@@ -56,7 +77,7 @@ public class Article {
         return quantitégroupé;
     }
 
-    public void setQuantité_groupé(float quantitégroupé) {
+    public void setQuantitégroupé(float quantitégroupé) {
         this.quantitégroupé = quantitégroupé;
     }
 
