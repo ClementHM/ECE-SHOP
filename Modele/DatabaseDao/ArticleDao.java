@@ -32,7 +32,7 @@ public class ArticleDao implements InterfaceArticle {
                 article.setDescription(resultSet.getString("description"));
                 article.setPrixunitaire(resultSet.getFloat("prix_unitaire"));
                 article.setPrixgroupé(resultSet.getFloat("prix_groupé"));
-                article.setQuantité_groupé(resultSet.getFloat("quantité_groupé"));
+                article.setQuantitégroupé(resultSet.getFloat("quantité_groupé"));
 
             }
             System.out.println(article);
@@ -70,7 +70,7 @@ public class ArticleDao implements InterfaceArticle {
                 article.setDescription(description);
                 article.setPrixunitaire(prixunitaire);
                 article.setPrixgroupé(prixgroupé);
-                article.setQuantité_groupé(quantitégroupé);
+                article.setQuantitégroupé(quantitégroupé);
 
                 listearticles.add(article);
 
