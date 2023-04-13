@@ -76,8 +76,8 @@ public class Article {
     }
 
     public String toString() {
-            return "Article{" + "id: " + id + " nom: " + nom + " description: "+ description+
-                    " prix unitaire: " + prix+  " quantité groupé: "+ quantité+ "categorie:"+ catégorie+"stock:"+stock+ '\'' + '}';
+            return "Article{" + "Id: " + id + " Nom: " + nom + " Description: "+ description+
+                    " Prix: " + prix+  " Quantité: "+ quantité+ " Catégorie: "+ catégorie+" Stock: "+stock+ '\'' + '}';
         }
     }
 
