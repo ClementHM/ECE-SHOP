@@ -6,18 +6,21 @@ import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Login extends Application {
     @Override
     public void start(Stage primaryStage) {
         TabPane tabPane = new TabPane();
-        Tab tab = new Tab("Onglet");
+        Tab tab = new Tab("ECE Shopping");
         tabPane.getTabs().add(tab);
         Scene scene = new Scene(tabPane, 400, 400);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    public class test {
+        public static void main(String[] args) {
+            launch(args);
+
+        }
     }
 }
