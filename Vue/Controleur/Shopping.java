@@ -1,24 +1,9 @@
-package Vue;
+package Vue.Controleur;
 
 
-import Modele.DatabaseDao.ArticleDao;
-import Modele.DatabaseDao.DaoFactory;
-import Modele.Panier;
-import Modele.Table.Article;
-import javafx.application.Application;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+//public final class Shopping extends Application {
 
-import java.io.IOException;
-import java.net.URL;
-import javafx.event.ActionEvent;
-
-public final class Shopping extends Application {
-
-    Panier panier;
+   /* Panier panier;
 
     public void affichage(ActionEvent event)
     {
@@ -58,6 +43,6 @@ public final class Shopping extends Application {
         articleDao.getArticleById(2);
 
         launch(args);
-    }
-}
+    }*/
+//}
 

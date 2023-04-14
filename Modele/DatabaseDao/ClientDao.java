@@ -2,10 +2,10 @@ package Modele.DatabaseDao;
 
 import Modele.DatabaseDao.Interfaces.InterfaceClient;
 import Modele.Table.Client;
-import javafx.scene.control.Alert;
 
-import java.awt.event.ActionEvent;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClientDao implements InterfaceClient {
     private DaoFactory daoFactory;
@@ -16,6 +16,55 @@ public class ClientDao implements InterfaceClient {
     }
 
     @Override
+    public List<Client> Connexion() {
+        List<Client> listerclient = new ArrayList<Client>();
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet rs = null;
+
+        try {
+            connection = daoFactory.getConnection();
+            statement = connection.createStatement();
+            rs = statement.executeQuery(("select* from client"));
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String nom = rs.getString("nom");
+                String prénom = rs.getString("prénom");
+                String adresse = rs.getString("adresse");
+                String email= rs.getString("email");
+                String password = rs.getString("password");
+
+
+
+                Client client= new Client();
+                client.setId(id);
+                client.setNom(nom);
+                client.setPrénom(prénom);
+                client.setAdresse(adresse);
+                client.setEmail(email);
+                client.setPassword(password);
+
+
+                listerclient.add(client);
+
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        /*System.out.println("Liste des clients: ");
+        System.out.println("----------------------------------------------------");
+        for (Client element : listerclient) {
+            System.out.println(element);
+            System.out.println("----------------------------------------------------");
+
+        }*/
+        return listerclient;
+
+    }
+        @Override
     public void saveClient(String nom, String prénom, String adresse, String ville, String pays, String email) {
         try {
             Connection conn = daoFactory.getConnection();
@@ -39,7 +88,7 @@ public class ClientDao implements InterfaceClient {
         }
     }
 
-    @Override
+  /*  @Override
     public Client creationcompte(ActionEvent event, String nom, String prénom, String adresse, String email, String password) {
         try {
             Connection connection = daoFactory.getConnection();
@@ -72,5 +121,5 @@ public class ClientDao implements InterfaceClient {
 
 
         return null;
-    }
+    }*/
 }
