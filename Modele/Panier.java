@@ -1,4 +1,4 @@
-package Controleur;
+package Modele;
 
 import Modele.Table.Article;
 
@@ -24,9 +24,10 @@ public class Panier {
         this.total_prix = total_prix;
     }
 
-    public float AddPanier(Article article)
+    public void addPanier(Article article)
     {
+        System.out.println("Ajouté au panier");
         Panier_article.add(article);
-        return article.getPrix();
+        this.total_prix+=article.getPrix();
     }
 }
