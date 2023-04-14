@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox fx:id="page_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<HBox fx:id="page_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #87CEEB;">
          <children>
@@ -13,51 +13,51 @@
                <image>
                   <Image url="@ECE_LOGO_2021_web.png" />
                </image></ImageView>
-            <Label fx:id="label_employe" layoutX="14.0" layoutY="349.0" prefHeight="17.0" prefWidth="71.0" text="Employé :">
+            <Label fx:id="label_employe" layoutX="21.0" layoutY="462.0" prefHeight="17.0" prefWidth="71.0" text="Employé :">
                <font>
                   <Font name="Century Gothic Bold" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="bt_logemploye" layoutX="76.0" layoutY="348.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Espace employé" textFill="#ff0101">
+            <Button fx:id="bt_logemploye" layoutX="92.0" layoutY="460.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Espace employé" textFill="#ff0101">
                <font>
                   <Font name="Century Gothic Bold" size="10.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="400.0" prefWidth="432.0">
+      <AnchorPane prefHeight="494.0" prefWidth="513.0">
          <children>
-            <Label fx:id="label_email" layoutY="168.0" prefHeight="17.0" prefWidth="101.0" text="Email: ">
+            <Label fx:id="label_email" layoutY="205.0" prefHeight="17.0" prefWidth="101.0" text="Email: ">
                <font>
                   <Font name="Century Gothic Bold" size="15.0" />
                </font></Label>
-            <Label fx:id="label_mdp" layoutY="241.0" prefHeight="17.0" prefWidth="101.0" text="Mot de passe">
+            <Label fx:id="label_mdp" layoutY="281.0" prefHeight="19.0" prefWidth="113.0" text="Mot de passe: ">
                <font>
                   <Font name="Century Gothic Bold" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="tf_email" layoutX="51.0" layoutY="165.0" prefHeight="25.0" prefWidth="334.0" />
-            <TextField fx:id="tf_password" layoutX="101.0" layoutY="238.0" prefHeight="25.0" prefWidth="290.0" />
-            <Button fx:id="bt_connexion" layoutX="297.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #87CEEB;" text="Connexion">
+            <TextField fx:id="tf_email" layoutX="53.0" layoutY="202.0" prefHeight="25.0" prefWidth="456.0" />
+            <Button fx:id="bt_connexion" layoutX="409.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: #87CEEB; -fx-cursor: hand;" text="Connexion">
                <font>
                   <Font name="Century Gothic Bold" size="12.0" />
                </font>
             </Button>
-            <Label fx:id="label_pasdecompte" layoutX="14.0" layoutY="360.0" prefHeight="17.0" prefWidth="129.0" text="Pas de compte ?">
+            <Label fx:id="label_pasdecompte" layoutX="14.0" layoutY="463.0" prefHeight="17.0" prefWidth="129.0" text="Pas de compte ?">
                <font>
                   <Font name="Century Gothic Bold" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="bt_creercompte" layoutX="129.0" layoutY="359.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Créer un compte" textFill="RED">
+            <Button fx:id="bt_creercompte" layoutX="143.0" layoutY="462.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Créer un compte" textFill="RED">
                <font>
                   <Font name="Century Gothic Bold" size="10.0" />
                </font>
             </Button>
-            <Label fx:id="label_titre" layoutX="65.0" layoutY="53.0" prefHeight="19.0" prefWidth="306.0" text="BIENVENUE SUR ECE SHOPPING" textAlignment="JUSTIFY" textFill="SKYBLUE">
+            <Label fx:id="label_titre" layoutX="63.0" layoutY="94.0" prefHeight="25.0" prefWidth="388.0" text="BIENVENUE SUR ECE SHOPPING" textAlignment="JUSTIFY" textFill="SKYBLUE">
                <font>
-                  <Font name="Century Gothic Bold" size="20.0" />
+                  <Font name="Century Gothic Bold" size="26.0" />
                </font>
             </Label>
+            <PasswordField fx:id="password" layoutX="103.0" layoutY="278.0" prefHeight="25.0" prefWidth="407.0" />
          </children></AnchorPane>
    </children>
 </HBox>

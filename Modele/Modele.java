@@ -14,7 +14,7 @@ public class Modele {
 
         ArticleDao article1 = new ArticleDao(daoFactory);
         article1.getArticleById(12);
-        //article1.lister();
+        article1.lister();
         //EmployéDao employé= new EmployéDao(daoFactory);
         //employé.getEmployeById(2);
         //employé.lister();

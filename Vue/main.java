@@ -7,11 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class main extends Application {
+
+
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         stage.setTitle("ECE Shopping");
-        stage.setScene(new Scene(root,700,700));
+        stage.setScene(new Scene(root,600,400));
         stage.show();
 
 

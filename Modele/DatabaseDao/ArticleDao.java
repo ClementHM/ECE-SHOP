@@ -61,17 +61,22 @@ public class ArticleDao implements InterfaceArticle {
                 int id = rs.getInt("id");
                 String nom = rs.getString("nom");
                 String description = rs.getString("description");
-                float prixunitaire= rs.getInt("prix_unitaire");
-                float prixgroupé= rs.getInt("prix_groupé");
-                float quantitégroupé= rs.getInt("quantité_groupé");
+                float prix= rs.getInt("prix");
+                float quantité= rs.getInt("quantité");
+                String catégorie= rs.getString("categorie");
+                int stock =rs.getInt("stock");
+                int remise= rs.getInt("remise");
+
 
                 Article article =new Article();
                 article.setId(id);
                 article.setNom(nom);
                 article.setDescription(description);
-                article.setPrix(prixunitaire);
-               // article.setPrix(prixgroupé);
-                article.setQuantité(quantitégroupé);
+                article.setPrix(prix);
+                article.setQuantité(quantité);
+                article.setCatégorie(catégorie);
+                article.setStock(stock);
+                article.setRemise(remise);
 
                 listearticles.add(article);
 

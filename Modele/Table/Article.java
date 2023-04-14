@@ -15,7 +15,15 @@ public class Article {
 
         private int stock;
 
+        private int remise;
 
+    public int getRemise() {
+        return remise;
+    }
+
+    public void setRemise(int remise) {
+        this.remise = remise;
+    }
 
     public String getCatégorie() {
         return catégorie;
@@ -75,9 +83,18 @@ public class Article {
         this.quantité = quantité;
     }
 
+    @Override
     public String toString() {
-            return "Article{" + "Id: " + id + " Nom: " + nom + " Description: "+ description+
-                    " Prix: " + prix+  " Quantité: "+ quantité+ " Catégorie: "+ catégorie+" Stock: "+stock+ '\'' + '}';
-        }
+        return "Article{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", description='" + description + '\'' +
+                ", prix=" + prix +
+                ", quantité=" + quantité +
+                ", catégorie='" + catégorie + '\'' +
+                ", stock=" + stock +
+                ", remise=" + remise +
+                '}';
     }
+}
 

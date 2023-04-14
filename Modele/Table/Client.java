@@ -5,9 +5,17 @@ public class Client {
     private String nom;
     private String prénom;
     private String adresse;
-    private String ville;
-    private String pays;
     private String email;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
 
     public int getId() {
         return id;
@@ -41,22 +49,6 @@ public class Client {
         this.adresse = adresse;
     }
 
-    public String getVille() {
-        return ville;
-    }
-
-    public void setVille(String ville) {
-        this.ville = ville;
-    }
-
-    public String getPays() {
-        return pays;
-    }
-
-    public void setPays(String pays) {
-        this.pays = pays;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -72,9 +64,8 @@ public class Client {
                 ", nom='" + nom + '\'' +
                 ", prénom='" + prénom + '\'' +
                 ", adresse='" + adresse + '\'' +
-                ", ville='" + ville + '\'' +
-                ", pays='" + pays + '\'' +
                 ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
