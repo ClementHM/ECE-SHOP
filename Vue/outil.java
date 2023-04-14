@@ -1,15 +1,7 @@
 package Vue;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-
 public class outil {
-    public static void changeScene(javafx.event.ActionEvent event, String fxmlFile,String title, String email, String password){
+   /* public static void changeScene(ActionEvent event, String fxmlFile, String title, String email, String password){
         Parent root= null;
         if(email!=null && password!=null){
             try {
@@ -32,5 +24,5 @@ public class outil {
         stage.show();
     }
 
-
+*/
 }

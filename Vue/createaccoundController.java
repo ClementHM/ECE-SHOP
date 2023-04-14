@@ -8,11 +8,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class signup implements Initializable {
+public class createaccoundController implements Initializable {
     @FXML
     private Button bt_creercompte;
 
@@ -20,23 +19,7 @@ public class signup implements Initializable {
     private Button bt_retourlogin;
 
     @FXML
-    private Label labelcreeruncompte;
-
-    @FXML
-    private Label labelnom;
-
-    @FXML
-    private Label labelemail;
-    @FXML
-    private Label labelmdp;
-
-    @FXML
-    private Label labeladresse;
-
-    @FXML
     private PasswordField mdp;
-    @FXML
-    private Label prénom;
 
     @FXML
     private TextField tf_nvnomclient;
@@ -56,8 +39,8 @@ public class signup implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         bt_retourlogin.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent actionEvent) {
-                outil.changeScene(actionEvent,"Login.fxml","Creation de compte",null,null);
+            public void handle(ActionEvent event) {
+                //outil.changeScene(event ,"creationcompte.fxml","Creation de compte",null,null);
 
 
             }
