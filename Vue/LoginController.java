@@ -45,5 +45,6 @@ public class LoginController implements Initializable {
         page_login.getBlendMode().getDeclaringClass();
 
     }
+
 }
 
