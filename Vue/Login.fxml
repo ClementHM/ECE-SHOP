@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<HBox fx:id="page_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.LoginController">
+<HBox fx:id="page_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.LoginController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #87CEEB;">
          <children>
@@ -42,7 +37,7 @@
                </font>
             </Label>
             <TextField fx:id="tf_email" layoutX="53.0" layoutY="202.0" prefHeight="25.0" prefWidth="456.0" />
-            <Button fx:id="bt_connexion" layoutX="409.0" layoutY="364.0" mnemonicParsing="false" onAction="#Connexionbouton" style="-fx-background-color: #87CEEB; -fx-cursor: hand;" text="Connexion">
+            <Button fx:id="bt_connexion" layoutX="409.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: #87CEEB; -fx-cursor: hand;" text="Connexion">
                <font>
                   <Font name="Century Gothic Bold" size="12.0" />
                </font>
@@ -52,7 +47,7 @@
                   <Font name="Century Gothic Bold" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="bt_creercompte" layoutX="143.0" layoutY="462.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Créer un compte" textFill="RED">
+            <Button fx:id="bt_creercompte" layoutX="143.0" layoutY="462.0" mnemonicParsing="false" onAction="#nvcomptebouton" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Créer un compte" textFill="RED">
                <font>
                   <Font name="Century Gothic Bold" size="10.0" />
                </font>

@@ -66,9 +66,10 @@ public class LoginController implements Initializable {
 
     }
 
-    public void Connexionbouton(ActionEvent event){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("creationcompte.fxml"));
+    public void nvcomptebouton(ActionEvent event){
+
         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("creationcompte.fxml"));
             root = loader.load();
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
