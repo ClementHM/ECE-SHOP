@@ -108,11 +108,10 @@ public class LoginController implements Initializable {
         String url="jdbc:mysql://localhost:3306/shopping";
         String username="root";
         String password="abcdef";
-
         DaoFactory daoFactory = new DaoFactory(url,username,password);
-        ClientDao clientDao = new ClientDao(daoFactory);
+        ClientDao clientDao;
+        clientDao = new ClientDao(daoFactory);
         List<Client> cc =clientDao.Connexion();
-
 
         for (int i=0;i<cc.size();i++){
             if ((cc.get(i).getEmail().equals(tf_email.getText() ) )&& (cc.get(i).getPassword().equals(pf_password.getText()))){

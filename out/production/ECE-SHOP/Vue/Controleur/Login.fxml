@@ -25,7 +25,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="494.0" prefWidth="513.0">
+      <AnchorPane prefHeight="700.0" prefWidth="1200.0">
          <children>
             <Label fx:id="label_email" layoutY="205.0" prefHeight="17.0" prefWidth="101.0" text="Email: ">
                <font>

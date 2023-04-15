@@ -65,12 +65,12 @@ public class ClientDao implements InterfaceClient {
 
     }
         @Override
-    public void saveClient(String nom, String prénom, String adresse, String email, String password) {
+    public void saveClient(String nom, String prenom, String adresse, String email, String password) {
         try {
             Connection conn = daoFactory.getConnection();
             PreparedStatement ps = conn.prepareStatement("INSERT INTO client (nom, prénom, adresse,email,password) VALUES (?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, nom);
-            ps.setString(2, prénom);
+            ps.setString(2, prenom);
             ps.setString(3, adresse);
             ps.setString(4, email);
             ps.setString(5, password);
