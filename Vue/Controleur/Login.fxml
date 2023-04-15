@@ -18,7 +18,7 @@
                   <Font name="Century Gothic Bold" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="bt_logemploye" layoutX="92.0" layoutY="460.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Espace employé" textFill="#ff0101">
+            <Button fx:id="bt_logemploye" layoutX="92.0" layoutY="460.0" mnemonicParsing="false" onAction="#loginemploye" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Espace employé" textFill="#ff0101">
                <font>
                   <Font name="Century Gothic Bold" size="10.0" />
                </font>
@@ -37,7 +37,7 @@
                </font>
             </Label>
             <TextField fx:id="tf_email" layoutX="53.0" layoutY="202.0" prefHeight="25.0" prefWidth="456.0" />
-            <Button fx:id="bt_connexion" layoutX="409.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: #87CEEB; -fx-cursor: hand;" text="Connexion">
+            <Button fx:id="bt_connexion" layoutX="409.0" layoutY="364.0" mnemonicParsing="false" onAction="#connexionbouton" style="-fx-background-color: #87CEEB; -fx-cursor: hand;" text="Connexion">
                <font>
                   <Font name="Century Gothic Bold" size="12.0" />
                </font>
@@ -57,7 +57,7 @@
                   <Font name="Century Gothic Bold" size="26.0" />
                </font>
             </Label>
-            <PasswordField fx:id="password" layoutX="103.0" layoutY="278.0" prefHeight="25.0" prefWidth="407.0" />
+            <PasswordField fx:id="pf_password" layoutX="117.0" layoutY="278.0" prefHeight="25.0" prefWidth="388.0" />
          </children></AnchorPane>
    </children>
 </HBox>

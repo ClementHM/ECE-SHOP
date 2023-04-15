@@ -14,7 +14,7 @@ public class Modele {
 
         ArticleDao article1 = new ArticleDao(daoFactory);
         article1.getArticleById(2);
-        article1.lister();
+       // article1.lister();
         //EmployéDao employé= new EmployéDao(daoFactory);
         //employé.getEmployeById(2);
         //employé.lister();
@@ -25,6 +25,8 @@ public class Modele {
         //commande.saveCommande(timestamp, 5, 100, 1);
         ClientDao clientDao =new ClientDao(daoFactory);
         //clientDao.saveClient("nom", "prénom", "adresse", "ville", "pays","email");
+        clientDao.Connexion();
+
 
 
 

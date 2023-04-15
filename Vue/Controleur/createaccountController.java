@@ -1,5 +1,8 @@
 package Vue.Controleur;
 
+import Modele.DatabaseDao.ClientDao;
+import Modele.DatabaseDao.DaoFactory;
+import Modele.Table.Client;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -65,6 +68,44 @@ public class createaccountController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+
+    }
+
+    public void comptecreer (ActionEvent event){
+        String url="jdbc:mysql://localhost:3306/shopping";
+        String username="root";
+        String password="abcdef";
+        String nom;
+        String prenom;
+        String email;
+        String adresse;
+        String motdepasse;
+
+        DaoFactory daoFactory = new DaoFactory(url,username,password);
+        ClientDao clientDao = new ClientDao(daoFactory);
+        Client client =new Client();
+        nom = tf_nvnomclient.getText();
+        prenom= tf_nvprenomclient.getText();
+        adresse= tf_nvadresseclient.getText();
+        email = tf_nvemailclient.getText();
+        motdepasse= mdp.getText();
+        clientDao.saveClient(nom,prenom,adresse,email,motdepasse);
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            root = loader.load();
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
 
 
     }

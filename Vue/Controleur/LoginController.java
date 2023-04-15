@@ -1,5 +1,8 @@
 package Vue.Controleur;
 
+import Modele.DatabaseDao.ClientDao;
+import Modele.DatabaseDao.DaoFactory;
+import Modele.Table.Client;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +20,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
+
 
 public class LoginController implements Initializable {
 
@@ -52,7 +57,7 @@ public class LoginController implements Initializable {
     private TextField tf_email;
 
     @FXML
-    private PasswordField password;
+    private PasswordField pf_password;
 
     private Stage stage;
     private Scene scene;
@@ -66,7 +71,7 @@ public class LoginController implements Initializable {
 
     }
 
-    public void nvcomptebouton(ActionEvent event){
+    public void nvcomptebouton (ActionEvent event){
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("creationcompte.fxml"));
@@ -79,6 +84,54 @@ public class LoginController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+    }
+
+    public void loginemploye (ActionEvent event){
+
+        try {FXMLLoader loader = new FXMLLoader(getClass().getResource("Loginemploye.fxml"));
+            root = loader.load();
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        }catch (IOException e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void connexionbouton(ActionEvent event){
+        String url="jdbc:mysql://localhost:3306/shopping";
+        String username="root";
+        String password="abcdef";
+
+        DaoFactory daoFactory = new DaoFactory(url,username,password);
+        ClientDao clientDao = new ClientDao(daoFactory);
+        List<Client> cc =clientDao.Connexion();
+
+
+        for (int i=0;i<cc.size();i++){
+            if ((cc.get(i).getEmail().equals(tf_email.getText() ) )&& (cc.get(i).getPassword().equals(pf_password.getText()))){
+                try {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("test.fxml"));
+                    root = loader.load();
+                    stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
+
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+
+            }
+
+
+
+
 
 
     }
