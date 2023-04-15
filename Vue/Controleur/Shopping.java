@@ -125,72 +125,168 @@ public class Shopping implements Initializable{
         this.panier= new Panier();
         this.articleDao = new ArticleDao(daoFactory);
         String nom = this.articleDao.getArticleById(1).getNom();
-        Article1.setText(nom);
+        if(Article1!=null )
+        {
+            Article1.setText(nom);
+        }
         nom = this.articleDao.getArticleById(2).getNom();
-        Article2.setText(nom);
+        if(Article2!=null )
+        {
+            Article2.setText(nom);
+        }
         // Augmenter de 1 à chaque fois jusqu'à la ligne 37
         for (int i = 3; i <= 37; i++) {
             nom = this.articleDao.getArticleById(i).getNom();
             if (i == 3) {
-                Article3.setText(nom);
+                if(Article3!=null )
+                {
+                    Article3.setText(nom);
+                }
             } else if (i == 4) {
-                Article4.setText(nom);
+                if(Article4!=null )
+                {
+                    Article4.setText(nom);
+                }
             } else if (i == 5) {
-                Article5.setText(nom);
+                if(Article5!=null )
+                {
+                    Article5.setText(nom);
+                }
             } else if (i == 6) {
-                Article6.setText(nom);
+                if(Article6!=null )
+                {
+                    Article6.setText(nom);
+                }
             } else if (i == 7) {
-                Article7.setText(nom);
+                if(Article7!=null )
+                {
+                    Article7.setText(nom);
+                }
             } else if (i == 8) {
-                Article8.setText(nom);
+                if(Article8!=null )
+                {
+                    Article8.setText(nom);
+                }
             } else if (i == 9) {
-                Article9.setText(nom);
+                if(Article9!=null )
+                {
+                    Article9.setText(nom);
+                }
             } else if (i == 10) {
-                Article10.setText(nom);
+                if(Article10!=null )
+                {
+                    Article10.setText(nom);
+                }
             } else if (i == 11) {
-                Article11.setText(nom);
+                if(Article11!=null )
+                {
+                    Article11.setText(nom);
+                }
             } else if (i == 12) {
-                Article12.setText(nom);
+                if(Article12!=null )
+                {
+                    Article12.setText(nom);
+                }
             } else if (i == 13) {
-                Article13.setText(nom);
+                if(Article13!=null )
+                {
+                    Article13.setText(nom);
+                }
             } else if (i == 14) {
-                Article14.setText(nom);
+                if(Article14!=null )
+                {
+                    Article14.setText(nom);
+                }
             } else if (i == 15) {
-                Article15.setText(nom);
+                if(Article15!=null )
+                {
+                    Article15.setText(nom);
+                }
             } else if (i == 16) {
-                Article16.setText(nom);
+                if(Article16!=null )
+                {
+                    Article16.setText(nom);
+                }
             } else if (i == 17) {
-                Article17.setText(nom);
+                if(Article17!=null )
+                {
+                    Article17.setText(nom);
+                }
             } else if (i == 18) {
-                Article18.setText(nom);
+                if(Article18!=null )
+                {
+                    Article18.setText(nom);
+                }
             } else if (i == 19) {
-                Article19.setText(nom);
+                if(Article19!=null )
+                {
+                    Article19.setText(nom);
+                }
             } else if (i == 20) {
-                Article20.setText(nom);
+                if(Article20!=null )
+                {
+                    Article20.setText(nom);
+                }
             } else if (i == 21) {
-                Article21.setText(nom);
+                if(Article21!=null )
+                {
+                    Article21.setText(nom);
+                }
             } else if (i == 22) {
-                Article22.setText(nom);
+                if(Article22!=null )
+                {
+                    Article22.setText(nom);
+                }
             } else if (i == 23) {
-                Article23.setText(nom);
+                if(Article23!=null )
+                {
+                    Article23.setText(nom);
+                }
             } else if (i == 24) {
-                Article24.setText(nom);
+                if(Article24!=null )
+                {
+                    Article24.setText(nom);
+                }
             } else if (i == 25) {
-                Article25.setText(nom);
+                if(Article25!=null )
+                {
+                    Article25.setText(nom);
+                }
             } else if (i == 26) {
-                Article26.setText(nom);
+                if(Article26!=null )
+                {
+                    Article26.setText(nom);
+                }
             } else if (i == 27) {
-                Article27.setText(nom);
+                if(Article27!=null )
+                {
+                    Article27.setText(nom);
+                }
             } else if (i == 28) {
-                Article28.setText(nom);
+                if(Article28!=null )
+                {
+                    Article28.setText(nom);
+                }
             } else if (i == 29) {
-                Article29.setText(nom);
+                if(Article29!=null )
+                {
+                    Article29.setText(nom);
+                }
             } else if (i == 30) {
-                Article30.setText(nom);
+                if(Article30!=null )
+                {
+                    Article30.setText(nom);
+                }
             } else if (i == 31) {
-                Article31.setText(nom);
+                if(Article31!=null )
+                {
+                    Article31.setText(nom);
+                }
             } else if (i == 32) {
-                Article32.setText(nom);
+                if(Article32!=null )
+                {
+                    Article32.setText(nom);
+                }
             }
 
 
@@ -350,7 +446,7 @@ public class Shopping implements Initializable{
     public void dirFruit(ActionEvent event){
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("ShoppingFruit.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Fruit.fxml"));
             root = loader.load();
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
@@ -360,6 +456,36 @@ public class Shopping implements Initializable{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+
+    }
+    public void dirShopping(ActionEvent event) {
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Shopping.fxml"));
+            root = loader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+        public void dirLegume(ActionEvent event){
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Legume.fxml"));
+                root = loader.load();
+                stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
 
 
     }
