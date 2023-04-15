@@ -555,5 +555,6 @@
       <Button fx:id="fruits" layoutX="103.0" layoutY="12.0" mnemonicParsing="false" onAction="#dirFruit" text="Fruits" />
       <Button fx:id="Légumes" layoutX="161.0" layoutY="12.0" mnemonicParsing="false" onAction="#dirLegume" text="Légumes" />
       <Button fx:id="Shopping" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#dirShopping" text="Découvrir" />
+      <Button fx:id="btpanier" layoutX="707.0" layoutY="12.0" mnemonicParsing="false" onAction="#voirpanier" text="Panier" />
    </children>
 </AnchorPane>
