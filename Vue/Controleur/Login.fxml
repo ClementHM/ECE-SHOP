@@ -5,13 +5,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox fx:id="page_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.LoginController">
+<HBox fx:id="page_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.Controleur.LoginController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #87CEEB;">
          <children>
             <ImageView fx:id="img_ece" fitHeight="150.0" fitWidth="200.0" layoutX="-8.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/ECE_LOGO_2021_web.png" />
+                  <Image url="@../images/ECE_LOGO_2021_web.png" />
                </image></ImageView>
             <Label fx:id="label_employe" layoutX="21.0" layoutY="462.0" prefHeight="17.0" prefWidth="71.0" text="Employé :">
                <font>

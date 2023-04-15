@@ -1,4 +1,4 @@
-package Vue;
+package Vue.Controleur;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,51 +11,65 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class createaccountController implements Initializable {
-    @FXML
-    private Button bt_creercompte;
+public class LoginController implements Initializable {
 
     @FXML
-    private Button bt_retourlogin;
+
+    private HBox page_login;
 
     @FXML
-    private PasswordField mdp;
+    private Button bt_connexion;
+    @FXML
+    private Label label_titre;
 
     @FXML
-    private TextField tf_nvnomclient;
+    private Label label_email;
 
     @FXML
-    private TextField tf_nvprenomclient;
-    @FXML
-    private TextField tf_nvadresseclient;
-    @FXML
-    private TextField tf_nvemailclient;
+    private Label label_mdp;
 
     @FXML
-    private Label labelconnexion;
+    private Label label_pasdecompte;
 
+    @FXML
+    private Label label_employé;
+
+    @FXML
+
+    private Button bt_logemploye;
+    @FXML
+    private ImageView img_ece;
+
+    @FXML
+    private TextField tf_email;
+
+    @FXML
+    private PasswordField password;
 
     private Stage stage;
     private Scene scene;
     private Parent root;
 
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
 
-
     }
-    public void retourlogin (ActionEvent event){
+
+    public void nvcomptebouton(ActionEvent event){
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("creationcompte.fxml"));
             root = loader.load();
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
@@ -69,5 +83,7 @@ public class createaccountController implements Initializable {
 
     }
 
-
 }
+
+
+
