@@ -17,6 +17,8 @@ public class Article {
 
         private int remise;
 
+        private String image;
+
     public int getRemise() {
         return remise;
     }
@@ -94,7 +96,16 @@ public class Article {
                 ", catégorie='" + catégorie + '\'' +
                 ", stock=" + stock +
                 ", remise=" + remise +
+                ", image=" + image +
                 '}';
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
 

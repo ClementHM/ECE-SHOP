@@ -34,9 +34,10 @@ public class ArticleDao implements InterfaceArticle {
                 article.setQuantité(resultSet.getFloat("quantité"));
                 article.setCatégorie(resultSet.getString("categorie"));
                 article.setStock(resultSet.getInt("stock"));
+                article.setImage(resultSet.getString("image"));
 
             }
-            System.out.println(article);
+            //System.out.println(article);
             return article;
 
         } catch (SQLException e) {
@@ -66,6 +67,7 @@ public class ArticleDao implements InterfaceArticle {
                 String catégorie= rs.getString("categorie");
                 int stock =rs.getInt("stock");
                 int remise= rs.getInt("remise");
+                String image =rs.getString("image");
 
 
                 Article article =new Article();
@@ -77,6 +79,7 @@ public class ArticleDao implements InterfaceArticle {
                 article.setCatégorie(catégorie);
                 article.setStock(stock);
                 article.setRemise(remise);
+                article.setImage(image);
 
                 listearticles.add(article);
 
