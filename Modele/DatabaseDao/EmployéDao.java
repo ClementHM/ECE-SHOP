@@ -77,14 +77,14 @@ public class EmployéDao implements Interfaceemployé {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println("Liste des employés: ");
+        /*System.out.println("Liste des employés: ");
         System.out.println("----------------------------------------------------");
         for (Employé element: listeemployés){
             System.out.println(element);
             System.out.println("----------------------------------------------------");
 
 
-        }
+        }*/
         return listeemployés;
 
     }
