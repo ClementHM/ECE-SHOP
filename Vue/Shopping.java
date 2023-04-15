@@ -199,7 +199,7 @@ public class Shopping implements Initializable{
 
     public void add1(ActionEvent event) {
         System.out.println(articleDao.getArticleById(1));
-        this.panier.Panier_article.add(articleDao.getArticleById(1));
+        //this.panier.Panier_article.add(articleDao.getArticleById(1));
         //this.panier.addPanier(articleDao.getArticleById(1));
     }
 
