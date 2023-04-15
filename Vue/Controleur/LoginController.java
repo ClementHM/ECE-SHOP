@@ -117,7 +117,7 @@ public class LoginController implements Initializable {
         for (int i=0;i<cc.size();i++){
             if ((cc.get(i).getEmail().equals(tf_email.getText() ) )&& (cc.get(i).getPassword().equals(pf_password.getText()))){
                 try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("test.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Shopping.fxml"));
                     root = loader.load();
                     stage = (Stage)((Node)event.getSource()).getScene().getWindow();
                     scene = new Scene(root);
