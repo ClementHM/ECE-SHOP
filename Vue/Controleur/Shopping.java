@@ -91,6 +91,7 @@ public class Shopping implements Initializable{
     @FXML
     private Text Article32;
 
+    @FXML
     private Button btpanier;
 
     @FXML
