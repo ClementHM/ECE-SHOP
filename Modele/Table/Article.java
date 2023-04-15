@@ -17,6 +17,8 @@ public class Article {
 
         private int remise;
 
+
+
     public int getRemise() {
         return remise;
     }
@@ -96,5 +98,6 @@ public class Article {
                 ", remise=" + remise +
                 '}';
     }
+
 }
 
