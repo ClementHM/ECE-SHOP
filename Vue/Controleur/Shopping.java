@@ -1,4 +1,4 @@
-package Vue;
+package Vue.Controleur;
 
 
 import Modele.DatabaseDao.ArticleDao;
