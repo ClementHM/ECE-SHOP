@@ -59,6 +59,9 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField pf_password;
 
+    @FXML
+    private Label labelerreur;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -125,6 +128,8 @@ public class LoginController implements Initializable {
                     throw new RuntimeException(e);
                 }
 
+            } else {
+                labelerreur.setText("Mauvais mail ou mauvais mot de passe");
             }
 
             }

@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -33,6 +34,8 @@ public class loginemployecontroller implements Initializable {
     private TextField tf_email;
     @FXML
     private PasswordField pf_password;
+    @FXML
+    private Label labelerreur;
 
     private Stage stage;
     private Scene scene;
@@ -84,6 +87,8 @@ public class loginemployecontroller implements Initializable {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
+            }else{
+                labelerreur.setText("Mauvais mail ou mauvais mot de passe");
             }
 
 

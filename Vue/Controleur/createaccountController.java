@@ -90,6 +90,8 @@ public class createaccountController implements Initializable {
         adresse= tf_nvadresseclient.getText();
         email = tf_nvemailclient.getText();
         motdepasse= mdp.getText();
+
+
         clientDao.saveClient(nom,prenom,adresse,email,motdepasse);
 
         try {
