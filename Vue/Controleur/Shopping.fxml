@@ -542,12 +542,12 @@
             <Font size="8.0" />
          </font>
       </Button>
-      <Button layoutX="620.0" layoutY="556.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+      <Button layoutX="620.0" layoutY="556.0" mnemonicParsing="false" onAction="#add31" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
          <font>
             <Font size="8.0" />
          </font>
       </Button>
-      <Button layoutX="709.0" layoutY="556.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+      <Button layoutX="709.0" layoutY="556.0" mnemonicParsing="false" onAction="#add32" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
          <font>
             <Font size="8.0" />
          </font>

@@ -87,15 +87,12 @@ public class Article {
 
     @Override
     public String toString() {
-        return "Article{" +
-                "id=" + id +
-                ", nom='" + nom + '\'' +
+        return
+                "nom='" + nom + '\'' +
                 ", description='" + description + '\'' +
                 ", prix=" + prix +
-                ", quantité=" + quantité +
                 ", catégorie='" + catégorie + '\'' +
-                ", stock=" + stock +
-                ", remise=" + remise +
+
                 '}';
     }
 

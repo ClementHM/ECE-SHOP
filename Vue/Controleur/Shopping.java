@@ -12,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -89,20 +90,11 @@ public class Shopping implements Initializable{
     private Text Article31;
     @FXML
     private Text Article32;
-    @FXML
-    private Text Article33;
-    @FXML
-    private Text Article34;
-    @FXML
-    private Text Article35;
-    @FXML
-    private Text Article36;
-    @FXML
-    private Text Article37;
-
-    @FXML
 
     private Button btpanier;
+
+    @FXML
+    private TextArea tx_area;
 
 
 
@@ -295,8 +287,7 @@ public class Shopping implements Initializable{
 
     public void add1(ActionEvent event) {
         System.out.println(articleDao.getArticleById(1));
-        //this.panier.Panier_article.add(articleDao.getArticleById(1));
-        //this.panier.addPanier(articleDao.getArticleById(1));
+        panier.addPanier(articleDao.getArticleById(1));
     }
 
     public void add2(ActionEvent event) {
@@ -443,6 +434,17 @@ public class Shopping implements Initializable{
         panier.addPanier(articleDao.getArticleById(30));
     }
 
+    public void add31 (ActionEvent event){
+        System.out.println(articleDao.getArticleById(31));
+        panier.addPanier(articleDao.getArticleById(31));
+    }
+
+    public void add32 (ActionEvent event){
+        System.out.println(articleDao.getArticleById(32));
+        panier.addPanier(articleDao.getArticleById(32));
+    }
+
+
     public void dirFruit(ActionEvent event){
 
         try {
@@ -503,7 +505,7 @@ public class Shopping implements Initializable{
             throw new RuntimeException(e);
         }
 
-    }
+        }
 
     public void dirlogin (ActionEvent event){
         try {

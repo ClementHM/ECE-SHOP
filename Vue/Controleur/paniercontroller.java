@@ -1,5 +1,6 @@
 package Vue.Controleur;
 
+import Modele.Panier;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,12 +20,20 @@ public class paniercontroller implements Initializable {
     @FXML
     private Button btretourshopping;
 
+    @FXML
+    private TextArea tx_area;
+
+
+
+
     private Stage stage;
     private Scene scene;
     private Parent root;
+    private Panier panier;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
 
     }
     public void retourshopping (ActionEvent event){
@@ -40,4 +50,9 @@ public class paniercontroller implements Initializable {
         }
 
     }
+
+
+
+
+
 }

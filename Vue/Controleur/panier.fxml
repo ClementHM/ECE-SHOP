@@ -11,11 +11,15 @@
             <Font name="Century Gothic Bold" size="20.0" />
          </font></Label>
       <Button fx:id="btretourshopping" layoutX="21.0" layoutY="31.0" mnemonicParsing="false" onAction="#retourshopping" prefHeight="25.0" prefWidth="115.0" text="Retour Shopping" />
-      <TextArea fx:id="tx_area" layoutX="14.0" layoutY="110.0" prefHeight="429.0" prefWidth="963.0" />
-      <Label layoutX="21.0" layoutY="93.0" prefHeight="17.0" prefWidth="207.0" text="ARTICLE DANS VOTRE PANIER" textFill="#1b9949">
+      <TextArea fx:id="tx_area" layoutX="14.0" layoutY="110.0" prefHeight="429.0" prefWidth="963.0">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font></TextArea>
+      <Label layoutX="21.0" layoutY="93.0" prefHeight="17.0" prefWidth="207.0" text="ARTICLE DANS VOTRE PANIER:" textFill="#1b9949">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
       </Label>
+      <Button fx:id="bt_payer" layoutX="916.0" layoutY="573.0" mnemonicParsing="false" text="Payer" />
    </children>
 </AnchorPane>
