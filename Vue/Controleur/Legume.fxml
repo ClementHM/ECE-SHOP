@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.Controleur.Shopping">
+   <children>
+      <BorderPane layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/tomate.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article20" strokeType="OUTSIDE" strokeWidth="0.0" text="Pates" wrappingWidth="46.78306007385254" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="89.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/concombre.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article21" strokeType="OUTSIDE" strokeWidth="0.0" text="Farine" wrappingWidth="68.38303565979004" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button layoutX="13.0" layoutY="146.0" mnemonicParsing="false" onAction="#add20" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="102.0" layoutY="146.0" mnemonicParsing="false" onAction="#add21" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="16.0" layoutY="10.0" />
+      <BorderPane layoutX="196.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/carotte.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article22" strokeType="OUTSIDE" strokeWidth="0.0" text="Riz" wrappingWidth="71.58304786682129" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="298.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/courgette.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article23" strokeType="OUTSIDE" strokeWidth="0.0" text="Pates" wrappingWidth="46.78306007385254" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="387.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/courgette.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article24" strokeType="OUTSIDE" strokeWidth="0.0" text="Farine" wrappingWidth="68.38303565979004" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button layoutX="209.0" layoutY="146.0" mnemonicParsing="false" onAction="#add22" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="311.0" layoutY="146.0" mnemonicParsing="false" onAction="#add23" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="400.0" layoutY="146.0" mnemonicParsing="false" onAction="#add24" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="489.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/aubergine.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article25" strokeType="OUTSIDE" strokeWidth="0.0" text="Oignon" wrappingWidth="46.78306007385254" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button layoutX="502.0" layoutY="146.0" mnemonicParsing="false" onAction="#add25" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="593.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/aubergine.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article26" strokeType="OUTSIDE" strokeWidth="0.0" text="Ail" wrappingWidth="46.78306007385254" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="695.0" layoutY="48.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/champignon.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article27" strokeType="OUTSIDE" strokeWidth="0.0" text="Riz" wrappingWidth="71.58304786682129" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="3.0" layoutY="188.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/patate_douce.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article28" strokeType="OUTSIDE" strokeWidth="0.0" text="Pates" wrappingWidth="46.78306007385254" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="92.0" layoutY="188.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/patate_douce.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article29" strokeType="OUTSIDE" strokeWidth="0.0" text="Farine" wrappingWidth="68.38303565979004" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button layoutX="607.0" layoutY="146.0" mnemonicParsing="false" onAction="#add26" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="708.0" layoutY="146.0" mnemonicParsing="false" onAction="#add27" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="16.0" layoutY="286.0" mnemonicParsing="false" onAction="#add28" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="105.0" layoutY="286.0" mnemonicParsing="false" onAction="#add29" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="199.0" layoutY="188.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/oignon.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article30" strokeType="OUTSIDE" strokeWidth="0.0" text="Riz" wrappingWidth="71.58304786682129" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="301.0" layoutY="188.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/ail.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article31" strokeType="OUTSIDE" strokeWidth="0.0" text="Pates" wrappingWidth="46.78306007385254" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <BorderPane layoutX="404.0" layoutY="188.0" prefHeight="98.0" prefWidth="102.0">
+         <center>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/riz.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Text fx:id="Article32" strokeType="OUTSIDE" strokeWidth="0.0" text="Farine" wrappingWidth="68.38303565979004" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button layoutX="212.0" layoutY="286.0" mnemonicParsing="false" onAction="#add30" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="314.0" layoutY="286.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="417.0" layoutY="286.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="76.0" text="Ajouter">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button fx:id="fruits" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" onAction="#dirFruit" text="Fruits" />
+      <Button fx:id="Légumes" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" onAction="#dirLegume" text="Légumes" />
+      <Button fx:id="Shopping" layoutX="13.0" layoutY="10.0" mnemonicParsing="false" onAction="#dirShopping" text="Découvrir" />
+   </children>
+</AnchorPane>
