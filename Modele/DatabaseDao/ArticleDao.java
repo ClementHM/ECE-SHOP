@@ -99,6 +99,23 @@ public class ArticleDao implements InterfaceArticle {
 
     }
 
+    public void updatestock(String nom, int newstock){
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        try {
+            conn = daoFactory.getConnection();
+            String sql = "UPDATE article SET stock = ? WHERE nom = ?";
+            stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, newstock);
+            stmt.setString(2, nom);
+            stmt.executeUpdate();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     }
 
 

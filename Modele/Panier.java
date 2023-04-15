@@ -6,15 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Panier {
-    public List<Article> Panier_article = new ArrayList<Article>();
+    protected List<Article> Panier_article = new ArrayList<Article>();
     private float total_prix;
 
     public List<Article> getPanier_article() {
 
-        return getPanier_article();
+        return Panier_article;
     }
-
-
 
 
     public void setPanier_article(List<Article> panier_article) {

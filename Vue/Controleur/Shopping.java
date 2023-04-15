@@ -20,9 +20,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Shopping implements Initializable{
+public class Shopping implements Initializable {
     @FXML
     private Button fruit;
+
+    @FXML
+    private Button Légumes;
     @FXML
     private Button ajouter;
 
@@ -93,11 +96,8 @@ public class Shopping implements Initializable{
 
     @FXML
     private Button btpanier;
-
     @FXML
     private TextArea tx_area;
-
-
 
 
     private Panier panier;
@@ -107,6 +107,8 @@ public class Shopping implements Initializable{
     private Scene scene;
     private Parent root;
 
+    private String texte = "";
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String url1 = "jdbc:mysql://localhost:3306/shopping";
@@ -115,175 +117,144 @@ public class Shopping implements Initializable{
         DaoFactory daoFactory = new DaoFactory(url1, username, password);
         java.util.Date date = new java.util.Date();
         java.sql.Timestamp timestamp = new java.sql.Timestamp(date.getTime());
-        this.panier= new Panier();
+        this.panier = new Panier();
         this.articleDao = new ArticleDao(daoFactory);
         String nom = this.articleDao.getArticleById(1).getNom();
-        if(Article1!=null )
-        {
+        if (Article1 != null) {
             Article1.setText(nom);
         }
         nom = this.articleDao.getArticleById(2).getNom();
-        if(Article2!=null )
-        {
+        if (Article2 != null) {
             Article2.setText(nom);
         }
         // Augmenter de 1 à chaque fois jusqu'à la ligne 37
         for (int i = 3; i <= 37; i++) {
             nom = this.articleDao.getArticleById(i).getNom();
             if (i == 3) {
-                if(Article3!=null )
-                {
+                if (Article3 != null) {
                     Article3.setText(nom);
                 }
             } else if (i == 4) {
-                if(Article4!=null )
-                {
+                if (Article4 != null) {
                     Article4.setText(nom);
                 }
             } else if (i == 5) {
-                if(Article5!=null )
-                {
+                if (Article5 != null) {
                     Article5.setText(nom);
                 }
             } else if (i == 6) {
-                if(Article6!=null )
-                {
+                if (Article6 != null) {
                     Article6.setText(nom);
                 }
             } else if (i == 7) {
-                if(Article7!=null )
-                {
+                if (Article7 != null) {
                     Article7.setText(nom);
                 }
             } else if (i == 8) {
-                if(Article8!=null )
-                {
+                if (Article8 != null) {
                     Article8.setText(nom);
                 }
             } else if (i == 9) {
-                if(Article9!=null )
-                {
+                if (Article9 != null) {
                     Article9.setText(nom);
                 }
             } else if (i == 10) {
-                if(Article10!=null )
-                {
+                if (Article10 != null) {
                     Article10.setText(nom);
                 }
             } else if (i == 11) {
-                if(Article11!=null )
-                {
+                if (Article11 != null) {
                     Article11.setText(nom);
                 }
             } else if (i == 12) {
-                if(Article12!=null )
-                {
+                if (Article12 != null) {
                     Article12.setText(nom);
                 }
             } else if (i == 13) {
-                if(Article13!=null )
-                {
+                if (Article13 != null) {
                     Article13.setText(nom);
                 }
             } else if (i == 14) {
-                if(Article14!=null )
-                {
+                if (Article14 != null) {
                     Article14.setText(nom);
                 }
             } else if (i == 15) {
-                if(Article15!=null )
-                {
+                if (Article15 != null) {
                     Article15.setText(nom);
                 }
             } else if (i == 16) {
-                if(Article16!=null )
-                {
+                if (Article16 != null) {
                     Article16.setText(nom);
                 }
             } else if (i == 17) {
-                if(Article17!=null )
-                {
+                if (Article17 != null) {
                     Article17.setText(nom);
                 }
             } else if (i == 18) {
-                if(Article18!=null )
-                {
+                if (Article18 != null) {
                     Article18.setText(nom);
                 }
             } else if (i == 19) {
-                if(Article19!=null )
-                {
+                if (Article19 != null) {
                     Article19.setText(nom);
                 }
             } else if (i == 20) {
-                if(Article20!=null )
-                {
+                if (Article20 != null) {
                     Article20.setText(nom);
                 }
             } else if (i == 21) {
-                if(Article21!=null )
-                {
+                if (Article21 != null) {
                     Article21.setText(nom);
                 }
             } else if (i == 22) {
-                if(Article22!=null )
-                {
+                if (Article22 != null) {
                     Article22.setText(nom);
                 }
             } else if (i == 23) {
-                if(Article23!=null )
-                {
+                if (Article23 != null) {
                     Article23.setText(nom);
                 }
             } else if (i == 24) {
-                if(Article24!=null )
-                {
+                if (Article24 != null) {
                     Article24.setText(nom);
                 }
             } else if (i == 25) {
-                if(Article25!=null )
-                {
+                if (Article25 != null) {
                     Article25.setText(nom);
                 }
             } else if (i == 26) {
-                if(Article26!=null )
-                {
+                if (Article26 != null) {
                     Article26.setText(nom);
                 }
             } else if (i == 27) {
-                if(Article27!=null )
-                {
+                if (Article27 != null) {
                     Article27.setText(nom);
                 }
             } else if (i == 28) {
-                if(Article28!=null )
-                {
+                if (Article28 != null) {
                     Article28.setText(nom);
                 }
             } else if (i == 29) {
-                if(Article29!=null )
-                {
+                if (Article29 != null) {
                     Article29.setText(nom);
                 }
             } else if (i == 30) {
-                if(Article30!=null )
-                {
+                if (Article30 != null) {
                     Article30.setText(nom);
                 }
             } else if (i == 31) {
-                if(Article31!=null )
-                {
+                if (Article31 != null) {
                     Article31.setText(nom);
                 }
             } else if (i == 32) {
-                if(Article32!=null )
-                {
+                if (Article32 != null) {
                     Article32.setText(nom);
                 }
             }
 
 
         }
+
     }
 
     public void add1(ActionEvent event) {
@@ -390,6 +361,7 @@ public class Shopping implements Initializable{
         System.out.println(articleDao.getArticleById(21));
         panier.addPanier(articleDao.getArticleById(21));
     }
+
     public void add22(ActionEvent event) {
         System.out.println(articleDao.getArticleById(22));
         panier.addPanier(articleDao.getArticleById(22));
@@ -435,23 +407,25 @@ public class Shopping implements Initializable{
         panier.addPanier(articleDao.getArticleById(30));
     }
 
-    public void add31 (ActionEvent event){
+    public void add31(ActionEvent event) {
         System.out.println(articleDao.getArticleById(31));
         panier.addPanier(articleDao.getArticleById(31));
     }
 
-    public void add32 (ActionEvent event){
+    public void add32(ActionEvent event) {
         System.out.println(articleDao.getArticleById(32));
         panier.addPanier(articleDao.getArticleById(32));
     }
 
 
-    public void dirFruit(ActionEvent event){
+    public void dirFruit(ActionEvent event) {
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Fruit.fxml"));
             root = loader.load();
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            Shopping test = loader.getController();
+            test.getPanier2(panier);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
@@ -462,6 +436,7 @@ public class Shopping implements Initializable{
 
 
     }
+
     public void dirShopping(ActionEvent event) {
 
         try {
@@ -476,43 +451,33 @@ public class Shopping implements Initializable{
             throw new RuntimeException(e);
         }
     }
-        public void dirLegume(ActionEvent event){
 
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("Legume.fxml"));
-                root = loader.load();
-                stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-                scene = new Scene(root);
-                stage.setScene(scene);
-                stage.show();
+    public void dirLegume(ActionEvent event) {
 
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Legume.fxml"));
+            root = loader.load();
+            Shopping test = loader.getController();
+            test.getPanier2(panier);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
 
     }
 
-    public void voirpanier (ActionEvent event){
+    public void voirpanier(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("panier.fxml"));
             root = loader.load();
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        }
-
-    public void dirlogin (ActionEvent event){
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
-            root = loader.load();
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            paniercontroller test = loader.getController();
+            test.getPanier(panier);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
@@ -522,8 +487,31 @@ public class Shopping implements Initializable{
         }
 
     }
+
+    public void dirlogin(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            root = loader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public void getPanier2(Panier panier){
+        this.panier=panier;
+
+
+    }
+
+
 
 
 
 }
-
