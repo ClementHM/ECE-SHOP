@@ -34,7 +34,6 @@ public class ArticleDao implements InterfaceArticle {
                 article.setQuantité(resultSet.getFloat("quantité"));
                 article.setCatégorie(resultSet.getString("categorie"));
                 article.setStock(resultSet.getInt("stock"));
-                article.setImage(resultSet.getString("image"));
 
             }
             //System.out.println(article);
@@ -79,7 +78,6 @@ public class ArticleDao implements InterfaceArticle {
                 article.setCatégorie(catégorie);
                 article.setStock(stock);
                 article.setRemise(remise);
-                article.setImage(image);
 
                 listearticles.add(article);
 
@@ -89,11 +87,11 @@ public class ArticleDao implements InterfaceArticle {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println("Liste des articles: ");
-        System.out.println("----------------------------------------------------");
+        //System.out.println("Liste des articles: ");
+        //System.out.println("----------------------------------------------------");
         for (Article element: listearticles){
-            System.out.println(element);
-            System.out.println("----------------------------------------------------");
+            //System.out.println(element);
+            //System.out.println("----------------------------------------------------");
 
 
         }
