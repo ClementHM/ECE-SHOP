@@ -43,7 +43,7 @@ public class EmployéDao implements Interfaceemployé {
         }
 
     }
-
+//liste les employe et permet la connexion loginemploye
     @Override
     public List<Employé> lister() {
         List<Employé> listeemployés = new ArrayList<Employé>();

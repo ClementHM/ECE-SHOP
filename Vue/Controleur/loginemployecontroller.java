@@ -65,7 +65,7 @@ public class loginemployecontroller implements Initializable {
 
 
     }
-
+    //permet une verification avec la bdd si le mail et le mot de passe sont bons ils accedent a la page employe
     public void connexionemploye (ActionEvent event) {
         String url = "jdbc:mysql://localhost:3306/shopping";
         String username = "root";

@@ -14,6 +14,7 @@ public class DetailcoDao implements InterfaceDetailCommande {
 
         this.daoFactory = daoFactory;
     }
+    //nous permet d'afficher tous details des commandes, finalement pas utilisé
     @Override
     public List<Detailcommande> CommandeParArticle(int idarticle) {
         List<Detailcommande> commandearticle = new ArrayList<Detailcommande>();

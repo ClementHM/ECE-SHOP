@@ -5,6 +5,8 @@ import Modele.Table.Article;
 import java.util.ArrayList;
 import java.util.List;
 
+//creer la classe panier qui sera utiliser dans le panier fxml
+//c'est une list d'article
 public class Panier {
     protected List<Article> Panier_article = new ArrayList<Article>();
     private float total_prix;

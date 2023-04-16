@@ -13,7 +13,7 @@ public class ArticleDao implements InterfaceArticle {
         this.daoFactory = daoFactory;
     }
 
-
+//permet d'avoir un article en tapant son id
     @Override
     public Article getArticleById(int id) {
         try {
@@ -45,6 +45,7 @@ public class ArticleDao implements InterfaceArticle {
         }
     }
 
+    //retourne tous les articles dans la bdd
     @Override
     public List <Article> lister (){
         List<Article> listearticles = new ArrayList<Article>();
@@ -98,7 +99,7 @@ public class ArticleDao implements InterfaceArticle {
         return listearticles;
 
     }
-
+//permet de fixer un nv stock lorsqu'on paye
     public void updatestock(String nom, int newstock){
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -116,6 +117,7 @@ public class ArticleDao implements InterfaceArticle {
         }
     }
 
+    //utiliser pour affiche le stock par article
     public String stockemploye(){
         Connection connection =null;
         Statement statement =null;

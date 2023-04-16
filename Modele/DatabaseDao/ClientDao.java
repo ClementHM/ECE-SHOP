@@ -14,7 +14,7 @@ public class ClientDao implements InterfaceClient {
 
         this.daoFactory = daoFactory;
     }
-
+//permet la connexion à la page shopping, liste de client
     @Override
     public List<Client> Connexion() {
         List<Client> listerclient = new ArrayList<Client>();
@@ -64,6 +64,7 @@ public class ClientDao implements InterfaceClient {
         return listerclient;
 
     }
+    //utiliser lorsque on creer un compte
         @Override
     public void saveClient(String nom, String prenom, String adresse, String email, String password) {
         try {
@@ -87,38 +88,5 @@ public class ClientDao implements InterfaceClient {
         }
     }
 
-  /*  @Override
-    public Client creationcompte(ActionEvent event, String nom, String prénom, String adresse, String email, String password) {
-        try {
-            Connection connection = daoFactory.getConnection();
-            PreparedStatement check = connection.prepareStatement
-                    ("select * from client where email = ?");
-            check.setString(1, email);
 
-            ResultSet resultSet = check.executeQuery();
-
-            if (resultSet.isBeforeFirst()) {
-                System.out.println("Mail déjà inscrit");
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("Vous pouvez pas utiliser cet email");
-                alert.show();
-            } else {
-                PreparedStatement insert = connection.prepareStatement("INSERT INTO client (nom, prénom, adresse, email, password VALUES (?,?,?,?,?)");
-                insert.setString(1, nom);
-                insert.setString(2, prénom);
-                insert.setString(3, adresse);
-                insert.setString(4, email);
-                insert.setString(5, password);
-                insert.executeQuery();
-            }
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
-
-
-        return null;
-    }*/
 }

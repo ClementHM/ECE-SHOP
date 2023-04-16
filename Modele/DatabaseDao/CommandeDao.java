@@ -15,7 +15,7 @@ public class CommandeDao implements InterfaceCommande {
         this.daoFactory = daoFactory;
     }
 
-
+//affiche la liste de commande pour un client donné
     @Override
     public List<Commande> CommandeClient(int idclient) {
         List<Commande> listecommandeclient = new ArrayList<Commande>();
@@ -63,6 +63,7 @@ public class CommandeDao implements InterfaceCommande {
 
     }
 
+    // permet d'enregistrer une commande dans la bdd
     @Override
     public void saveCommande(java.sql.Timestamp timestamp, int idclient, int total, int payé) {
         try {

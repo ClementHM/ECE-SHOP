@@ -28,6 +28,7 @@ public class Stockcontroller implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    // on affiche les stocks de chaque article dans la textarea
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String url1="jdbc:mysql://localhost:3306/shopping";

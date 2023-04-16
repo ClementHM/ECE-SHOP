@@ -2,7 +2,7 @@ package Modele;
 
 
 import Modele.DatabaseDao.*;
-
+//test pour les fonctions de la bdd
 public class Modele {
     public static void main(String[] args) {
         String url="jdbc:mysql://localhost:3306/shopping";

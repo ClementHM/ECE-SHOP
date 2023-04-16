@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+//utilisercomme test pour l'affichage des onglets
 public class run extends Application {
 
 

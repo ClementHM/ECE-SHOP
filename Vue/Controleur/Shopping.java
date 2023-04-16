@@ -109,6 +109,8 @@ public class Shopping implements Initializable {
 
     private String texte = "";
 
+    //permet d'afficher les infos des produits au dessus de chaque bouton correspondant
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String url1 = "jdbc:mysql://localhost:3306/shopping";
@@ -539,7 +541,7 @@ public class Shopping implements Initializable {
 
 
     }
-
+// permet de conserver le texte dans le panier
     public void getPanier2(Panier panier){
         this.panier=panier;
 

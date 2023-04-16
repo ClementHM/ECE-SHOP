@@ -73,7 +73,7 @@ public class LoginController implements Initializable {
 
 
     }
-
+    //changement d'onglet
     public void nvcomptebouton (ActionEvent event){
 
         try {
@@ -89,7 +89,7 @@ public class LoginController implements Initializable {
         }
 
     }
-
+    //changement d'onglet
     public void loginemploye (ActionEvent event){
 
         try {FXMLLoader loader = new FXMLLoader(getClass().getResource("Loginemploye.fxml"));
@@ -103,7 +103,7 @@ public class LoginController implements Initializable {
             throw new RuntimeException(e);
         }
     }
-
+//permet une verification avec la bdd si le mail et le mot de passe sont bons ils accedent au shopping
     public void connexionbouton(ActionEvent event){
         String url="jdbc:mysql://localhost:3306/shopping";
         String username="root";

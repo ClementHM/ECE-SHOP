@@ -60,7 +60,7 @@ public class paniercontroller implements Initializable {
         }
 
     }
-
+// quand on paye le stock d'article dans le panier diminue
     public void payer(){
         ArticleDao articleDao =new ArticleDao(DaoFactory.getInstance());
         List<Article> cc = panier.getPanier_article();
@@ -75,7 +75,7 @@ public class paniercontroller implements Initializable {
 
 
     }
-
+// pour afficher le panier dans le textearea
     public void getPanier(Panier panier){
         this.panier=panier;
         String texte = "";

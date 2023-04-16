@@ -55,6 +55,7 @@ public class createaccountController implements Initializable {
 
 
     }
+    //changement d'onglet
     public void retourlogin (ActionEvent event){
 
         try {
@@ -72,6 +73,7 @@ public class createaccountController implements Initializable {
 
     }
 
+    //permet de creer un compte et d'enregistrer les donnees pour un nv client
     public void comptecreer (ActionEvent event){
         String url="jdbc:mysql://localhost:3306/shopping";
         String username="root";
