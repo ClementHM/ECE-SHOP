@@ -34,13 +34,5 @@ public class Panier {
         this.total_prix+=article.getPrix();
     }
 
-    public String affichagepanier (){
-        System.out.println("Liste des articles dans le panier:");
-        System.out.println("----------------------------------------------------");
-        for (Article element : Panier_article) {
-            System.out.println(element);
-            System.out.println("----------------------------------------------------");
-        }
-        return null;
-    }
+
 }

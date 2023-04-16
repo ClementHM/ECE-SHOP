@@ -77,7 +77,7 @@ public class loginemployecontroller implements Initializable {
         for (int i = 0; i < ee.size(); i++) {
             if ((ee.get(i).getEmail().equals(tf_email.getText())) && (ee.get(i).getMotdepasse().equals(pf_password.getText()))) {
                 try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Shopping.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("ControleStock.fxml"));
                     root = loader.load();
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     scene = new Scene(root);

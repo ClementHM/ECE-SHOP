@@ -116,6 +116,30 @@ public class ArticleDao implements InterfaceArticle {
         }
     }
 
+    public String stockemploye(){
+        Connection connection =null;
+        Statement statement =null;
+        List<String> test = new ArrayList<String>();
+        try {
+            connection = daoFactory.getConnection();
+            statement = connection.createStatement();
+            String query = "SELECT nom, stock FROM article";
+            ResultSet rs = statement.executeQuery(query);
+            String txt = null;
+            while (rs.next()) {
+                String nom = rs.getString("nom");
+                int stock = rs.getInt("stock");
+                txt = "-"+ "Nom article:" + nom + " \t" + "\t" + "|Stock :" + stock +"\n";
+                test.add(txt);
+
+            }
+            return test.toString();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
     }
 
 

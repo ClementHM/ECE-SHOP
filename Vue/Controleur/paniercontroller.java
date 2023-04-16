@@ -70,7 +70,9 @@ public class paniercontroller implements Initializable {
             String nom = cc.get(i).getNom();
             articleDao.updatestock(nom,newstocck);
         }
+        cc.clear();
         tx_area.setText(null);
+
 
     }
 

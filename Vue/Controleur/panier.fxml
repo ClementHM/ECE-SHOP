@@ -6,9 +6,9 @@
 
 <AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.Controleur.paniercontroller">
    <children>
-      <Label layoutX="739.0" layoutY="68.0" prefHeight="17.0" prefWidth="115.0" text="PANIER:" textFill="#1b9949">
+      <Label layoutX="634.0" layoutY="18.0" prefHeight="52.0" prefWidth="189.0" text="PANIER" textFill="#1b9949">
          <font>
-            <Font name="Century Gothic Bold" size="20.0" />
+            <Font name="Century Gothic Bold" size="41.0" />
          </font></Label>
       <Button fx:id="btretourshopping" layoutX="21.0" layoutY="31.0" mnemonicParsing="false" onAction="#retourshopping" prefHeight="25.0" prefWidth="115.0" text="Retour Shopping" />
       <TextArea fx:id="tx_area" layoutX="14.0" layoutY="110.0" prefHeight="429.0" prefWidth="963.0">
